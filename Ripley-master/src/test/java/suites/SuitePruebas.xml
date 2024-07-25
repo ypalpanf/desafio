@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" parallel="methods" thread-count="18">
+    <test name="Test 1">
+        <parameter name="cucumber.features" value="src/test/java/features"/>
+        <parameter name="cucumber.glue" value="steps"/>
+        <parameter name="cucumber.plugin" value="pretty"/>
+        <parameter name="cucumber.filter.tags" value="@regresionTest"/>
+        <classes>
+            <class name="runners.testRunner"/>
+        </classes>
+    </test>
+</suite>
